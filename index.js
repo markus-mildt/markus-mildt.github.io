@@ -4,5 +4,7 @@ function convert(){
         const cans = Math.floor((parseFloat(bbl_input) * 31 * 128) / 12);
         const cases = Math.floor(cans / 24);
         document.getElementById('cans_result').innerText = `That is about ${cans} cans and about ${cases} cases.`
-    } 
+    } else {
+        document.getElementById('cans_result').innerText = `Please enter a valid number`
+    }
 }
